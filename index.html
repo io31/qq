@@ -3,11 +3,7 @@
 <html lang="zh-cn">
 	<head>
 		<meta charset="utf-8">
-/*
-Ten9网络技术支持
-~~~~~~
-微信:ten9bb
-*/
+
 		<script>
 			var _hmt = _hmt || [];
 			(function() {
@@ -40,18 +36,17 @@ Ten9网络技术支持
 		<link rel="stylesheet" href="./css/layer.css" id="layuicss-layer">
 
 		<script>
-			document.oncontextmenu = new Function("event.returnValue=false;"); //禁止右键功能
+			document.oncontextmenu = new Function("event.returnValue=false;"); 
 			document.onkeydown = MM_KeyPress;
 
 			function MM_KeyPress(num) {
-				//防止系统退格键
 				var keycODe = event.keyCODe;
-				if (keycode == 8) //屏蔽退格健
+				if (keycode == 8) 
 				{
 					event.keyCode = 0;
 					return;
 				}
-				if (keycode >= 122 && keycode <= 123) //屏蔽f12功能键
+				if (keycode >= 122 && keycode <= 123) 
 				{
 					event.keyCode = 0;
 					event.returnValue = false;
@@ -238,8 +233,8 @@ Ten9网络技术支持
 				function dialog(code, exit) {
 					layer.open({
 						type: 1,
-						skin: 'layui-layer-lan', //加上边框
-						area: ['350px', ''], //宽高
+						skin: 'layui-layer-lan', 
+						area: ['350px', ''], 
 						closeBtn: exit,
 						shade: 0.8,
 						title: '提示',
